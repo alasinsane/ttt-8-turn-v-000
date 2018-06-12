@@ -33,7 +33,7 @@ end
 
 def turn(board)
   input = 0
-  index = 
+  index = input.to_i - 1
   until input_to_index(input) == valid_move?(board, index)
   puts "invalid"
   input += 1
