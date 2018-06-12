@@ -32,9 +32,8 @@ def valid_move?(board, index)
 end
 
 def turn(board)
-  
-  index = input.to_i - 1
   input = 0
+  index = input - 1
   until input_to_index(input) == valid_move?(board, index)
   puts "invalid"
   input += 1
