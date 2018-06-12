@@ -37,11 +37,11 @@ puts "Please enter 1-9:"
 
 input = gets.strip
 
-input_to_index(input)
+index = input_to_index(input)
 
-move(board, index, "X")
-
-valid_move?(board, index)
+if valid_move?(board, index) == true
+  move(board, index, "X")
+else 
 
     end    
   end
